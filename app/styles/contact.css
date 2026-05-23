@@ -1,0 +1,28 @@
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--card);
+  padding: 0.85rem 1rem;
+  color: var(--foreground);
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+
+}
+
+.contact-link:hover {
+  border-color: var(--accent-strong);
+  background: var(--secondary);
+}
+
+.contact-link__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -1,0 +1,82 @@
+.project-visual {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--accent-strong);
+  border-radius: 1.5rem;
+  background: var(--secondary);
+  color: var(--foreground);
+  cursor: zoom-in;
+}
+
+.project-visual:focus-visible {
+  outline: 3px solid var(--accent-strong);
+  outline-offset: 3px;
+}
+
+.project-visual__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(56vh, 620px);
+  object-fit: contain;
+  object-position: center;
+}
+
+.project-visual-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+  padding: clamp(1rem, 4vw, 2.5rem);
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.project-visual-modal__content {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - clamp(2rem, 8vw, 5rem));
+  max-height: calc(100vh - clamp(2rem, 8vw, 5rem));
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+.project-visual-modal__close {
+  position: fixed;
+  top: clamp(1rem, 3vw, 2rem);
+  right: clamp(1rem, 3vw, 2rem);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #a1e1f7;
+  border-radius: 9999px;
+  background: #a1e1f7;
+  color: #17222c;
+}
+
+.project-visual-modal__close:hover,
+.project-visual-modal__close:focus-visible {
+  background: #a1e1f7;
+  outline: 2px solid #a1e1f7;
+  outline-offset: 2px;
+}
+
+.project-visual-modal__hint {
+  position: fixed;
+  bottom: clamp(1rem, 3vw, 2rem);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(161, 225, 247, 0.5);
+  border-radius: 9999px;
+  background: #a1e1f7;
+  color: #17222c;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}

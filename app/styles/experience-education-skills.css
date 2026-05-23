@@ -1,0 +1,153 @@
+.experience-highlight,
+.education-certification,
+.project-card__impact {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--secondary);
+  padding: 1rem;
+}
+
+.education-card__degree,
+.projects-empty__title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.education-card__icon,
+.skills-card__icon,
+.experience-item__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--secondary);
+  color: var(--foreground);
+}
+
+.card-title,
+.education-card__title,
+.project-card__title,
+.experience-item__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.education-card__title,
+.card-title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.experience-item__meta,
+.project-card__meta,
+.card-description {
+  font-size: 0.92rem;
+  color: var(--muted-foreground);
+}
+
+.experience-timeline,
+.projects-list,
+.skills-grid,
+.education-certifications,
+.detail-list,
+.project-dialog__details {
+  display: grid;
+  gap: 1rem;
+}
+
+.experience-item__content,
+.project-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.experience-item__header,
+.project-card__header,
+.project-dialog__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.experience-item__title,
+.project-card__title {
+  font-size: 1.7rem;
+}
+
+.experience-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.65rem;
+}
+
+.experience-item__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.experience-item__tags,
+.education-card__badges,
+.skills-card__badges,
+.project-card__tags,
+.project-card__title-row,
+.project-card__actions,
+.detail-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.experience-highlights {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.experience-highlight {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.experience-highlight__dot,
+.detail-list__dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-top: 0.7rem;
+  border-radius: 9999px;
+  background: var(--accent-strong);
+  flex-shrink: 0;
+}
+
+.experience-highlight__text {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--muted-foreground);
+}
+
+.education-card__header,
+.skills-card__header,
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.education-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1.5rem 1.5rem;
+}

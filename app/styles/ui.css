@@ -1,0 +1,178 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover,
+.card:hover {
+  transform: translateY(-1px);
+}
+
+.button--primary {
+  background: var(--accent);
+  border-color: var(--accent-strong);
+  color: var(--accent-foreground);
+}
+
+.button--primary:hover {
+  background: var(--accent-strong);
+}
+
+.button--secondary {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--foreground);
+}
+
+.button--secondary:hover,
+.button--outline:hover,
+.button--ghost:hover {
+  background: var(--secondary);
+}
+
+.button--outline {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--foreground);
+}
+
+.button--ghost {
+  background: transparent;
+  color: var(--foreground);
+}
+
+.button--default-size {
+  min-height: 2.75rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.button--sm {
+  min-height: 2.25rem;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.82rem;
+}
+
+.button--lg {
+  min-height: 3rem;
+  padding: 0.75rem 1.4rem;
+  font-size: 1rem;
+}
+
+.button--icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 1.75rem;
+  background: var(--card);
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badge--default {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.badge--secondary,
+.badge--highlight,
+.badge--outline {
+  background: var(--secondary);
+  color: var(--foreground);
+}
+
+.typing-subtitle {
+  display: inline-flex;
+  min-height: 2rem;
+  align-items: center;
+  text-wrap: balance;
+}
+
+.typing-subtitle__cursor {
+  display: inline-block;
+  width: 1px;
+  height: 1.5rem;
+  margin-left: 0.25rem;
+  background: var(--muted-foreground);
+  animation: cursor-pulse 1s ease-in-out infinite;
+}
+
+.toaster {
+  font-family: var(--font-sans);
+}
+
+.toast {
+  border: 1px solid var(--border);
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.toast-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.toast-description {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+}
+
+.toast-action {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes cursor-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

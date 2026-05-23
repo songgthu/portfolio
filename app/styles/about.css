@@ -1,0 +1,30 @@
+.about-grid,
+.education-grid,
+.contact-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.75rem;
+}
+
+.about-copy p,
+.experience-item__summary,
+.project-card__description,
+.detail-panel__body,
+.detail-list__text,
+.education-card__text,
+.projects-empty__text {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--muted-foreground);
+}
+
+.about-sidebar {
+  display: grid;
+  gap: 1.5rem;
+}
