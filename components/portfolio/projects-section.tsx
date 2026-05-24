@@ -1,4 +1,4 @@
-import { ArrowUpRight, Star } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { FadeInSection } from "@/components/portfolio/fade-in-section";
 import { SectionHeading } from "@/components/portfolio/section-heading";

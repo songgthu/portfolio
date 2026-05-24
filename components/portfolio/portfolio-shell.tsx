@@ -62,6 +62,15 @@ export function PortfolioShell() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    if (typeof document === "undefined") {
+      return;
+    }
+
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.dataset.accent = accent;
+  }, [theme, accent]);
+
   const uniqueProjectTags = Array.from(
     new Set(portfolioData.projects.flatMap((project) => project.tags)),
   );

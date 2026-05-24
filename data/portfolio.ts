@@ -148,19 +148,20 @@ export const portfolioData = {
       role: "Full-stack Developer · BrainHack 2025 Finalist",
       period: "Jun 2025",
       description:
-        "A mobile app for multimedia scam detection and reporting, built as a hackathon project by a 3-member team.",
+        "An IOS mobile app focused on scam detection and public awareness.",
       impact:
-        "Reached finalist status in a competition involving 4,300 students by pairing detection support with reporting workflows.",
+        "Finalist among 4,300 students",
       problem:
-        "Users face increasingly varied scam content across screenshots, messages, and media, and need faster reporting support.",
+        "Users face increasingly varied scam content across links, messages, and media, and need faster reporting support.",
       solution:
         "Led the development of a React Native and Firebase app that helps users detect and report suspicious multimedia content.",
       tags: ["React Native", "Firebase"],
       githubUrl: "https://github.com/songgthu",
       highlights: [
-        "Led a 3-member team from concept to finalist prototype.",
-        "Focused the product on scam detection plus action-oriented reporting.",
-        "Designed for speed and clarity in a high-pressure hackathon timeline.",
+        "Finalist among 4,300 student participants.",
+        "Built the prototype in a 2-week sprint, taking it from concept to finalist-ready product.",
+        "Developed cross-format scam detection and reporting capabilities for URLs, QR codes, email screenshots, and uploaded files.",
+        "Created a community discussion forum to promote scam awareness and enable collaborative threat reporting."
       ],
       gallery: [
         {
