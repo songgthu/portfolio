@@ -68,11 +68,12 @@ export const portfolioData = {
       summary:
         "Built a full-stack multi-agent AI threat-hunting platform that automated end-to-end analysis workflows for security teams.",
       highlights: [
-        "Implemented a full-stack, multi-agent AI threat-hunting platform, integrating Splunk, IntelOwl, and VirusTotal via REST APIs to automate end-to-end threat analysis workflows.",
         "Developed real-time monitoring dashboards, providing security teams with actionable insights and streamlined investigation processes.",
+        "Output a comprehensive threat intelligence report summarizing findings and recommendations, reducing 60% of manual analysis time.",
+        "Completed the initial prototype within 6 months and delivered a demo of the working system.",
         "Collaborated closely with other developers in an agile environment, contributing to product design discussions and iterative development cycles."
       ],
-      tags: ["Python", "LLMs", "Docker", "AI agents", "Splunk"],
+      tags: ["Python", "LLMs", "Docker", "AI agents", "Splunk", "REST APIs"],
     },
   ],
   projects: [
