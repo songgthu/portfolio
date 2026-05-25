@@ -1,19 +1,25 @@
-name: CI
+name: CI + Deploy
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - run: pnpm install
       - run: pnpm run build
+
       - run: pnpm run deploy
