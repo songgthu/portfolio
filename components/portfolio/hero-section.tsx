@@ -1,4 +1,4 @@
-import { ArrowUpRight, Download, Copy, Globe, Mail } from "lucide-react";
+import { ArrowUpRight, Download, Copy, Globe, Mail, GitBranch } from "lucide-react";
 
 import { MagneticButton } from "@/components/portfolio/magnetic-button";
 import { TypingSubtitle } from "@/components/portfolio/typing-subtitle";
@@ -76,6 +76,18 @@ export function HeroSection({
                     <span className="contact-link__label">
                       <Globe className="size-4" />
                       LinkedIn
+                    </span>
+                    <ArrowUpRight className="size-4" />
+                  </a>
+                  <a 
+                    className="contact-link" 
+                    href={profile.github} 
+                    rel="noreferrer" 
+                    target="_blank"
+                  >
+                    <span className="contact-link__label">
+                      <GitBranch className="size-4" />
+                      GitHub
                     </span>
                     <ArrowUpRight className="size-4" />
                   </a>

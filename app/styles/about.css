@@ -28,3 +28,8 @@
   display: grid;
   gap: 1.5rem;
 }
+
+.about-content {
+  display: flex;
+  gap: 2rem;
+}

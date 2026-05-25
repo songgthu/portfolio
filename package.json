@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@fontsource-variable/rubik": "^5.2.8",
