@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FadeInSection } from "@/components/portfolio/fade-in-section";
 import { SectionHeading } from "@/components/portfolio/section-heading";
 import { Card, CardContent } from "@/components/ui/card";

@@ -23,7 +23,6 @@
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -62,35 +61,114 @@
 }
 
 @media (max-width: 767px) {
+  /* Header */
+  .site-header {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .site-header::-webkit-scrollbar {
+    display: none;
+  }
+
   .site-header__inner {
-    min-height: auto;
-    padding-top: 0.75rem;
-    padding-bottom: 0.9rem;
+    width: max-content;
+    min-width: 100%;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
   }
 
   .site-header__nav {
-    gap: 0.35rem;
-    padding-right: 5.5rem;
+    flex-wrap: nowrap;
+    padding-right: 0;
   }
 
   .site-header__nav-button {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.82rem;
+    flex-shrink: 0;
   }
 
   .site-header__actions {
-    top: 0.95rem;
-    right: 1rem;
+    position: static;
     transform: none;
+    flex-shrink: 0;
   }
 
+  .site-header__actions button {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    line-height: 0;
+  }
+
+  .site-header__actions svg {
+    display: block;
+    margin: auto;
+  }
+
+  .accent-switcher__label {
+    display: none;
+  }
+
+  /* Main */
   .portfolio-main {
     padding-top: 7.5rem;
     gap: 5rem;
   }
 
+  /* About */
+  .about-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-copy {
+    padding: 1.25rem;
+  }
+
+  .about-copy p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .about-grid {
+    gap: 1rem;
+  }
+
+  .about-sidebar {
+    gap: 1rem;
+  }
+
+  /* Projects */
   .project-dialog__carousel {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+   .hero-section {
+    padding: 0 1rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .snapshot-card {
+    width: 100%;
+    max-width: 100%;
   }
 }
